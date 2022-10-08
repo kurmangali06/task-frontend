@@ -1,0 +1,22 @@
+.button {
+  display: inline-block;
+  background-color: orange;
+  border-radius: 30px;
+  padding: 10px 20px;
+  min-width: 100px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color duration ease-in-out, border-color duration ease-in-out;
+  border: 1px solid transparent;
+  text-decoration: none;
+  color: black;
+}
+.input {
+  border: 1px solid rgba(0, 0 ,0,0.1);
+  padding: 12px 20px;
+  padding-left: 42px;
+  border-radius: 12px;
+  font-size: 16px;
+  margin: 0 auto;
+  width: 450px;
+}
