@@ -10,7 +10,7 @@ const Post = () => {
   const [value, setValue] = useState('')
   useEffect(() => {
     if(id) {
-      axios.get(`http://localhost:5000/posts/${id}`).then(res => {
+      axios.get(`https://servers-node.herokuapp.com/posts/${id}`).then(res => {
         setValue(res?.data.text)
       })
     }
@@ -19,7 +19,7 @@ const Post = () => {
     const fields = {
       text: value,
     }
-    await axios.patch(`http://localhost:5000/posts/${id}`, fields )
+    await axios.patch(`https://servers-node.herokuapp.com/posts/${id}`, fields )
     navigate('/edit')
   }
   return (

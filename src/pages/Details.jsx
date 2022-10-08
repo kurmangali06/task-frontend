@@ -17,7 +17,7 @@ export const Details = () => {
     const fields = {
       text: value,
     }
-    const { data} = await axios.post('http://localhost:5000/posts', fields)
+    const { data} = await axios.post('https://servers-node.herokuapp.com/posts', fields)
     window.location.reload();
   } catch (error) {
     console.log(error);
@@ -28,7 +28,7 @@ export const Details = () => {
   const deletePost = async (id) => {
       if(window.confirm("Вы действительно ходите удалить пост?")) {
         posts?.filter(obj => obj._id !== id)
-        await axios.delete(`http://localhost:5000/posts/${id}`)
+        await axios.delete(`https://servers-node.herokuapp.com/posts/${id}`)
         window.location.reload();
       }
    
