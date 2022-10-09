@@ -16,11 +16,16 @@ const Post = () => {
     }
   }, [])
   const updatePost =  async(id) => {
-    const fields = {
-      text: value,
-    }
-    await axios.patch(`https://servers-node.herokuapp.com/posts/${id}`, fields )
-    navigate('/edit')
+    if(value.length < 5) {
+      alert("пост должен содеражать минимум 5 символов")
+     }else {
+      const fields = {
+        text: value,
+      }
+      await axios.patch(`https://servers-node.herokuapp.com/posts/${id}`, fields )
+      navigate('/edit')
+     }
+
   }
   return (
     <div>

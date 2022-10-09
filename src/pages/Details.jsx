@@ -15,6 +15,9 @@ export const Details = () => {
   },[])
 
   const fetchPost = async () => {
+   if(value.length < 5) {
+    alert("пост должен содеражать минимум 5 символов")
+   }
   try {
     const fields = {
       text: value,
