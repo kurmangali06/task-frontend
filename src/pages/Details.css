@@ -1,8 +1,8 @@
 .button {
   display: inline-block;
   background-color: orange;
-  border-radius: 30px;
-  padding: 10px 20px;
+  border-radius: 12px;
+  padding: 12px 20px;
   min-width: 100px;
   text-align: center;
   cursor: pointer;
@@ -14,9 +14,32 @@
 .input {
   border: 1px solid rgba(0, 0 ,0,0.1);
   padding: 12px 20px;
-  padding-left: 42px;
   border-radius: 12px;
   font-size: 16px;
   margin: 0 auto;
-  width: 450px;
+  width: 70%;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+.inp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.inp>button {
+  margin-top: 20px; ;
+}
+.post {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.btns {
+  display: flex;
+  justify-content: center;
 }

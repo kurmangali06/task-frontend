@@ -24,10 +24,18 @@ const Post = () => {
   }
   return (
     <div>
-      <h2>{id && `Ваш пост` }</h2>
+      <h2>Ваш пост</h2>
+      <div className='post'>
       <input  className='input' type="text" value={value} onChange={ e => setValue(e.target.value)} />
+      <br />
+      <div className='btns'>
       <button  className='button'  onClick={()=> updatePost(id)}>отправить</button>
+      <br />
       <Link to='/edit'   className='button' >Вернуться </Link>
+      </div>
+
+      </div>
+
     </div>
   )
 }
